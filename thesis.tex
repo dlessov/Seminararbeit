@@ -1,0 +1,75 @@
+\documentclass[11pt,titlepage,a4paper]{article}
+\usepackage[utf8]{inputenc}
+%\usepackage[ngerman]{babel}  %%<===== Comment out this line iff you write in English.
+\usepackage[inner=3.2cm,outer=2.8cm]{geometry}
+\usepackage{algorithmic}
+\usepackage{listings}
+\usepackage{longtable}
+\usepackage{float}
+\usepackage{fancyhdr,lipsum}
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,bm}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{fixmath}
+\usepackage{amsbsy}
+\usepackage{units}
+\usepackage{hhline}
+\usepackage{titling}
+\usepackage{blindtext}
+\usepackage{multirow}
+\usepackage[pdftex]{graphicx}
+\usepackage[pdftex]{xcolor}
+\usepackage{lastpage}
+\usepackage{afterpage}
+\usepackage{hyperref}
+
+\input{style.tex}
+
+
+\renewcommand{\arraystretch}{1.2}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+\title{The Influence of Controversial Source Data on Language Model Training and Performance} %% <= Titel eintragen
+\author{Dinmukhammed Lessov} %% <= Name eintragen
+
+\begin{document}
+%    \afterpage{\blankpage} % optional
+    \maketitle
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+%    \afterpage{\blankpage} % optional
+    \input{abstract.tex} %% <= Zusammenfassung schreiben
+    \thispagestyle{empty}
+    \newpage
+    
+%    \afterpage{\blankpage} % optional
+    \tableofcontents
+    \thispagestyle{empty}
+    \newpage
+    \setcounter{page}{1}
+    
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+    \input{section1.tex} %% <= Text schreiben
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+    \input{section2.tex} %% <= Text schreiben
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+    \input{section3.tex} %% <= Text schreiben
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+    \input{Seminararbeit_KI-BA/section4} %% <= Text schreiben
+
+    \newpage
+    \addcontentsline{toc}{section}{Literaturverzeichnis}
+    \bibliographystyle{IEEEtran}
+    \bibliography{ref}
+    \newpage
+    \appendix
+    
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+    \input{appendix} %% <= Anhang anfügen
+    \input{declaration}
+\end{document}
